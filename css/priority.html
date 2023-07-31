@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority</title>
+    <style>
+        .c-button {
+            color: yellow;
+        }
+
+        /* 우선순위가 낮았어도 합해져서 순위가 높아질 수 있음 */
+        .test-div button {
+            color: red;
+        }
+
+        /* #btn {
+            color: blue;
+        } */
+    </style>
+</head>
+<body>
+    <div class="test-div">
+        <button id="btn" class="c-button">버튼</button>
+    </div>
+
+    <button>버튼2</button>
+</body>
+</html>

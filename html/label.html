@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lable</title>
+
+    <style>
+        #chk1 {
+            display: none;
+        }
+
+        #chk1 + label {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <input type="checkbox" id="chk1">
+        <label for="chk1"></label> 
+    </div>
+
+    <div id="aaa"></div>
+
+    <div>
+        <!-- for="" !! -->
+        <label for="username">아이디</label> <input type="checkbox" id="username">
+    </div>
+    <div>
+        <label for="">비밀번호</label> <input type="password">
+    </div>
+    <div>
+        <span>아이디</span> <input type="text">
+    </div>
+
+    <div>안녕</div>하세요
+    <span>안녕</span>하세요
+</body>
+</html>

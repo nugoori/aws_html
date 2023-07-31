@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+    <style>
+        div {
+            margin: 70px 0px;
+        }
+
+        div .box {
+            /* margin 상하부분을 동시에 주면 중첩됨 > 해소하려면 각각 div 분리*/
+            margin: 50px auto;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+        div .box2 {
+            margin: 70px auto;
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box"></div>
+    </div>
+    <div>
+        <div class="box2"></div>
+    </div>
+    <div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
