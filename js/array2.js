@@ -1,7 +1,7 @@
 window.onload = () => {
     loadBookList();
 
-    // loadBookMap();
+    loadBookMap();
 };
 
 const bookList = new Array();
@@ -53,8 +53,8 @@ const loadBookMap = () => {
     bookMapOl.innerHTML = bookList.map((book) => {
         return `
             <li>
-                <span>${book.bookName} /</span>
-                <span>${book.author} /</span>
+                <span>${book.bookName} /</span> |
+                <span>${book.author} /</span> |
                 <span>${book.publisher}</span>
             </li>
         `
@@ -68,7 +68,7 @@ const addBookOnClickHandler = () => {
         publisher: document.querySelector(".book-publisher-input").value
     }
     bookList.push(book);
-    loadBookList();
+    loadBookMap();
     
 }
 
